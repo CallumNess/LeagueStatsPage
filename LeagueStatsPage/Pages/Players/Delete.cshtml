@@ -1,0 +1,52 @@
+﻿@page
+@model LeagueStatsPage.Pages.Players.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>PlayerDetails</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PlayerDetails.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PlayerDetails.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PlayerDetails.Team)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PlayerDetails.Team)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PlayerDetails.Age)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PlayerDetails.Age)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PlayerDetails.Dob)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PlayerDetails.Dob)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PlayerDetails.StartDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PlayerDetails.StartDate)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="PlayerDetails.ID" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>
