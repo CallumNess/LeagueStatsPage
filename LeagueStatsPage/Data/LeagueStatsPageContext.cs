@@ -4,16 +4,26 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using LeagueStatsPage.Models;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+
 
 namespace LeagueStatsPage.Data
 {
     public class LeagueStatsPageContext : DbContext
     {
-        public LeagueStatsPageContext (DbContextOptions<LeagueStatsPageContext> options)
-            : base(options)
+
+        public DbSet<PlayerDetails> PlayerDetails { get; set; }
+
+        public DbSet<Tournament> Tournaments { get; set; }
+
+        public LeagueStatsPageContext()
         {
+            
         }
 
-        public DbSet<LeagueStatsPage.Models.PlayerDetails> PlayerDetails { get; set; }
+        public LeagueStatsPageContext(DbContextOptions<LeagueStatsPageContext> options) : base(options)
+        {
+
+        }
     }
 }

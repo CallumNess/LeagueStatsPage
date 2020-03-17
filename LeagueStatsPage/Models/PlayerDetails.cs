@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,10 +15,12 @@ namespace LeagueStatsPage.Models
         public int Age { get; set; }
        
         [DataType(DataType.Date)]
+        [DisplayName("Start Date")]
         public DateTime StartDate { get; set; }
 
         [DataType(DataType.Date)]
-        public DateTime Dob { get; set; }
+        public DateTime DOB { get; set; }
+
         public bool IsActive { get; set; }
     }
 }
