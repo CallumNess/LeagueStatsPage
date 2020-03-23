@@ -14,13 +14,10 @@ namespace LeagueStatsPage.Data
 
         public DbSet<PlayerDetails> PlayerDetails { get; set; }
 
-        public DbSet<Tournament> Tournaments { get; set; }
-
         public LeagueStatsPageContext()
         {
             
         }
-
         public LeagueStatsPageContext(DbContextOptions<LeagueStatsPageContext> options) : base(options)
         {
 

@@ -19,6 +19,7 @@ namespace LeagueStatsPage.Models
         public DateTime StartDate { get; set; }
 
         [DataType(DataType.Date)]
+        [DisplayName("Date Of Birth")]
         public DateTime DOB { get; set; }
 
         public bool IsActive { get; set; }
