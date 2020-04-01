@@ -4,14 +4,16 @@ using LeagueStatsPage.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace LeagueStatsPage.Migrations
 {
     [DbContext(typeof(LeagueStatsPageContext))]
-    partial class LeagueStatsPageContextModelSnapshot : ModelSnapshot
+    [Migration("20200401141611_CreateTeams")]
+    partial class CreateTeams
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -53,19 +55,6 @@ namespace LeagueStatsPage.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("Teams");
-
-                    b.HasData(
-                        new { ID = 1, TeamName = "G2 Esports" },
-                        new { ID = 2, TeamName = "Excel Esports" },
-                        new { ID = 3, TeamName = "FC Schalke 04 Esports" },
-                        new { ID = 4, TeamName = "Fnatic" },
-                        new { ID = 5, TeamName = "MAD Lions" },
-                        new { ID = 6, TeamName = "Misfits Gaming" },
-                        new { ID = 7, TeamName = "Origen" },
-                        new { ID = 8, TeamName = "Rogue" },
-                        new { ID = 9, TeamName = "SK Gaming" },
-                        new { ID = 10, TeamName = "Team Vitality" }
-                    );
                 });
 #pragma warning restore 612, 618
         }
