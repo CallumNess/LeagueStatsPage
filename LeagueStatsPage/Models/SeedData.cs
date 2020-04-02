@@ -244,7 +244,142 @@ namespace LeagueStatsPage.Models
                          DOB = new DateTime(2019, 03, 07),
                          Team = "FC Schalke 04 Esports",
                          StartDate = new DateTime(2019, 12, 02)
-                     }
+                     },
+
+                      new PlayerDetails
+                    {
+                        Name = "Orome",
+                        Age = 1,
+                        DOB = new DateTime(2019, 01, 16),
+                        Team = "MAD Lions",
+                        StartDate = new DateTime(2019, 11, 29)
+                    },
+
+                    new PlayerDetails
+                    {
+                        Name = "Shad0w",
+                        Age = 19,
+                        DOB = new DateTime(2001, 02, 25),
+                        Team = "MAD Lions",
+                        StartDate = new DateTime(2019, 11, 29)
+                    },
+
+                    new PlayerDetails
+                    {
+                        Name = "Humanoid",
+                        Age = 20,
+                        DOB = new DateTime(2000, 03, 14),
+                        Team = "MAD Lions",
+                        StartDate = new DateTime(2019, 11, 29)
+                    },
+
+                    new PlayerDetails
+                    {
+                        Name = "Carzzy",
+                        Age = 18,
+                        DOB = new DateTime(2002, 01, 31),
+                        Team = "MAD Lions",
+                        StartDate = new DateTime(2019, 11, 29)
+                    },
+
+                     new PlayerDetails
+                     {
+                         Name = "Kaiser",
+                         Age = 21,
+                         DOB = new DateTime(1998, 11, 19),
+                         Team = "MAD Lions",
+                         StartDate = new DateTime(2019, 11, 29)
+                     },
+
+                        new PlayerDetails
+                    {
+                        Name = "Alphari",
+                        Age = 20,
+                        DOB = new DateTime(1999, 10, 20),
+                        Team = "Origen",
+                        StartDate = new DateTime(2018, 12, 03)
+                    },
+
+                    new PlayerDetails
+                    {
+                        Name = "Xerxe",
+                        Age = 20,
+                        DOB = new DateTime(1999, 11, 05),
+                        Team = "Origen",
+                        StartDate = new DateTime(2019, 11, 19)
+                    },
+
+                    new PlayerDetails
+                    {
+                        Name = "Nukeduck",
+                        Age = 23,
+                        DOB = new DateTime(1996, 05, 21),
+                        Team = "Origen",
+                        StartDate = new DateTime(2018, 12, 03)
+                    },
+
+                    new PlayerDetails
+                    {
+                        Name = "Upset",
+                        Age = 20,
+                        DOB = new DateTime(1999, 12, 16),
+                        Team = "Origen",
+                        StartDate = new DateTime(2019, 11, 19)
+                    },
+
+                     new PlayerDetails
+                     {
+                         Name = "Destiny",
+                         Age = 22,
+                         DOB = new DateTime(1997, 10, 27),
+                         Team = "Origen",
+                         StartDate = new DateTime(2019, 11, 19)
+                     },
+
+                    new PlayerDetails
+                    {
+                        Name = "Dan Dan",
+                        Age = 24,
+                        DOB = new DateTime(1995, 09, 07),
+                        Team = "Misfits Gaming",
+                        StartDate = new DateTime(2019, 07, 18)
+                    },
+
+                    new PlayerDetails
+                    {
+                        Name = "Razork",
+                        Age = 19,
+                        DOB = new DateTime(2000, 10, 07),
+                        Team = "Misfits Gaming",
+                        StartDate = new DateTime(2019, 12, 06)
+                    },
+
+                    new PlayerDetails
+                    {
+                        Name = "Febiven",
+                        Age = 23,
+                        DOB = new DateTime(1996, 09, 23),
+                        Team = "Misfits Gaming",
+                        StartDate = new DateTime(2018, 11, 20)
+                    },
+
+                    new PlayerDetails
+                    {
+                        Name = "Bvoy",
+                        Age = 22,
+                        DOB = new DateTime(1997, 12, 18),
+                        Team = "Misfits Gaming",
+                        StartDate = new DateTime(2019, 12, 06)
+                    },
+
+                    new PlayerDetails
+                    {
+                        Name = "Denyk",
+                        Age = 24,
+                        DOB = new DateTime(1995, 04, 30),
+                        Team = "Misfits Gaming",
+                        StartDate = new DateTime(2019, 12, 06)
+                    }
                 );
             context.SaveChanges();
             }
