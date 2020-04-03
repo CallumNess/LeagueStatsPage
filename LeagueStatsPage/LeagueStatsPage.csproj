@@ -5,6 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20200403151055_RelationshipBuild.cs" />
+    <Compile Remove="Migrations\20200403151055_RelationshipBuild.Designer.cs" />
+    <Compile Remove="Migrations\20200403151516_RelationshipBuild.cs" />
+    <Compile Remove="Migrations\20200403151516_RelationshipBuild.Designer.cs" />
+    <Compile Remove="Migrations\20200403153735_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200403153735_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20200403154019_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200403154019_InitialCreate.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.1" />

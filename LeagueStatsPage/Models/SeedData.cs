@@ -26,7 +26,7 @@ namespace LeagueStatsPage.Models
                         Name = "Wunder",
                         Age = 21,
                         DOB = new DateTime(1998,11,09),
-                        Team = "G2 Esports",
+                        TeamsId = 1,
                         StartDate = new DateTime(2017,12,8)
                     },
 
@@ -35,7 +35,7 @@ namespace LeagueStatsPage.Models
                         Name = "Jankos",
                         Age = 24,
                         DOB = new DateTime(1995,07,23),
-                        Team = "G2 Esports",
+                        TeamsId = 1,
                         StartDate = new DateTime(2017, 12, 8)
                     },
 
@@ -44,7 +44,7 @@ namespace LeagueStatsPage.Models
                         Name = "Perkz",
                         Age = 21,
                         DOB = new DateTime(1998,09,30),
-                        Team = "G2 Esports",
+                        TeamsId = 1,
                         StartDate = new DateTime(2015,06,02)
                     },
 
@@ -53,7 +53,7 @@ namespace LeagueStatsPage.Models
                         Name = "Caps",
                         Age = 20,
                         DOB = new DateTime(1999,11,17),
-                        Team = "G2 Esports",
+                        TeamsId = 1,
                         StartDate = new DateTime(2018,11,29)
                     },
 
@@ -62,7 +62,7 @@ namespace LeagueStatsPage.Models
                          Name = "Mikyx",
                          Age = 21,
                          DOB = new DateTime(1998,11,02),
-                         Team = "G2 Esports",
+                         TeamsId = 1,
                          StartDate = new DateTime(2018, 11, 29)
                      },
 
@@ -71,7 +71,7 @@ namespace LeagueStatsPage.Models
                        Name = "Expect",
                        Age = 1,
                        DOB = new DateTime(2019, 07, 04),
-                       Team = "Excel Esports",
+                      TeamsId = 2,
                        StartDate = new DateTime(2018,12,07)
                    },
 
@@ -80,7 +80,7 @@ namespace LeagueStatsPage.Models
                         Name = "Caedrel",
                         Age = 24,
                         DOB = new DateTime(1996,03,19),
-                        Team = "Excel Esports",
+                       TeamsId = 2,
                         StartDate = new DateTime(2018,12,02)
                     },
 
@@ -89,7 +89,7 @@ namespace LeagueStatsPage.Models
                         Name = "Mickey",
                         Age = 22,
                         DOB = new DateTime(1997, 07, 15),
-                        Team = "Excel Esports",
+                       TeamsId = 2,
                         StartDate = new DateTime(2019,11,29)
                     },
 
@@ -98,7 +98,7 @@ namespace LeagueStatsPage.Models
                         Name = "Patrik",
                         Age = 19,
                         DOB = new DateTime(2000, 04, 07),
-                        Team = "Excel Esports",
+                       TeamsId = 2,
                         StartDate = new DateTime(2019, 12, 04)
                     },
 
@@ -107,7 +107,7 @@ namespace LeagueStatsPage.Models
                          Name = "Tore",
                          Age = 20,
                          DOB = new DateTime(1999, 12, 27),
-                         Team = "Excel Esports",
+                        TeamsId = 2,
                          StartDate = new DateTime(2019, 12, 06)
                      },
 
@@ -116,7 +116,7 @@ namespace LeagueStatsPage.Models
                           Name = "Sacre",
                           Age = 23,
                           DOB = new DateTime(1996, 09, 07),
-                          Team = "SK Gaming",
+                          TeamsId = 9,
                           StartDate = new DateTime(2019, 05, 22)
                       },
 
@@ -125,7 +125,7 @@ namespace LeagueStatsPage.Models
                         Name = "Trick",
                         Age = 24,
                         DOB = new DateTime(1995, 07, 11),
-                        Team = "SK Gaming",
+                        TeamsId = 9,
                         StartDate = new DateTime(2019, 12, 16)
                     },
 
@@ -134,7 +134,7 @@ namespace LeagueStatsPage.Models
                         Name = "Jenax",
                         Age = 21,
                         DOB = new DateTime(1998, 12, 10),
-                        Team = "SK Gaming",
+                        TeamsId = 9,
                         StartDate = new DateTime(2019, 08, 01)
                     },
 
@@ -143,7 +143,7 @@ namespace LeagueStatsPage.Models
                         Name = "Crownshot",
                         Age = 21,
                         DOB = new DateTime(1998, 04, 17),
-                        Team = "SK Gaming",
+                        TeamsId = 9,
                         StartDate = new DateTime(2018, 12, 20)
                     },
 
@@ -152,7 +152,7 @@ namespace LeagueStatsPage.Models
                          Name = "LIMIT",
                          Age = 22,
                          DOB = new DateTime(1997, 12, 27),
-                         Team = "SK Gaming",
+                         TeamsId = 9,
                          StartDate = new DateTime(2019, 12, 16)
                      },
 
@@ -161,7 +161,7 @@ namespace LeagueStatsPage.Models
                         Name = "Bwipo",
                         Age = 21,
                         DOB = new DateTime(1998, 12, 24),
-                        Team = "Fnatic",
+                        TeamsId = 4,
                         StartDate = new DateTime(2018, 01, 07)
                        },
 
@@ -170,7 +170,7 @@ namespace LeagueStatsPage.Models
                         Name = "Selfmade",
                         Age = 20,
                         DOB = new DateTime(1999, 12, 15),
-                        Team = "Fnatic",
+                        TeamsId = 4,
                         StartDate = new DateTime(2019, 11, 21)
                     },
 
@@ -179,7 +179,7 @@ namespace LeagueStatsPage.Models
                         Name = "Nemesis",
                         Age = 20,
                         DOB = new DateTime(1999, 07, 26),
-                        Team = "Fnatic",
+                        TeamsId = 4,
                         StartDate = new DateTime(2018, 11, 29)
                     },
 
@@ -188,7 +188,7 @@ namespace LeagueStatsPage.Models
                         Name = "Rekkles",
                         Age = 23,
                         DOB = new DateTime(1996, 09, 20),
-                        Team = "Fnatic",
+                        TeamsId = 4,
                         StartDate = new DateTime(2015, 05, 14)
                     },
 
@@ -197,7 +197,7 @@ namespace LeagueStatsPage.Models
                          Name = "Hylissang",
                          Age = 24,
                          DOB = new DateTime(1995, 04, 30),
-                         Team = "Fnatic",
+                         TeamsId = 4,
                          StartDate = new DateTime(2017, 12, 14)
                      },
 
@@ -206,7 +206,7 @@ namespace LeagueStatsPage.Models
                         Name = "Odoamne",
                         Age = 25,
                         DOB = new DateTime(1995, 01, 18),
-                        Team = "FC Schalke 04 Esports",
+                        TeamsId = 3,
                         StartDate = new DateTime(2018, 12, 12)
                     },
 
@@ -215,7 +215,7 @@ namespace LeagueStatsPage.Models
                         Name = "Gilius",
                         Age = 23,
                         DOB = new DateTime(1997, 01, 05),
-                        Team = "FC Schalke 04 Esports",
+                        TeamsId = 3,
                         StartDate = new DateTime(2019, 12, 10)
                     },
 
@@ -224,7 +224,7 @@ namespace LeagueStatsPage.Models
                         Name = "Abbedagge",
                         Age = 1,
                         DOB = new DateTime(2019, 09, 10),
-                        Team = "FC Schalke 04 Esports",
+                        TeamsId = 3,
                         StartDate = new DateTime(2018, 11, 30)
                     },
 
@@ -233,7 +233,7 @@ namespace LeagueStatsPage.Models
                         Name = "Innaxe",
                         Age = 21,
                         DOB = new DateTime(1999, 03, 23),
-                        Team = "FC Schalke 04 Esports",
+                        TeamsId = 3,
                         StartDate = new DateTime(2020, 02, 13)
                     },
 
@@ -242,7 +242,7 @@ namespace LeagueStatsPage.Models
                          Name = "Dreams",
                          Age = 1,
                          DOB = new DateTime(2019, 03, 07),
-                         Team = "FC Schalke 04 Esports",
+                         TeamsId = 3,
                          StartDate = new DateTime(2019, 12, 02)
                      },
 
@@ -251,7 +251,7 @@ namespace LeagueStatsPage.Models
                         Name = "Orome",
                         Age = 1,
                         DOB = new DateTime(2019, 01, 16),
-                        Team = "MAD Lions",
+                        TeamsId = 5,
                         StartDate = new DateTime(2019, 11, 29)
                     },
 
@@ -260,7 +260,7 @@ namespace LeagueStatsPage.Models
                         Name = "Shad0w",
                         Age = 19,
                         DOB = new DateTime(2001, 02, 25),
-                        Team = "MAD Lions",
+                        TeamsId = 5,
                         StartDate = new DateTime(2019, 11, 29)
                     },
 
@@ -269,7 +269,7 @@ namespace LeagueStatsPage.Models
                         Name = "Humanoid",
                         Age = 20,
                         DOB = new DateTime(2000, 03, 14),
-                        Team = "MAD Lions",
+                        TeamsId = 5,
                         StartDate = new DateTime(2019, 11, 29)
                     },
 
@@ -278,7 +278,7 @@ namespace LeagueStatsPage.Models
                         Name = "Carzzy",
                         Age = 18,
                         DOB = new DateTime(2002, 01, 31),
-                        Team = "MAD Lions",
+                        TeamsId = 5,
                         StartDate = new DateTime(2019, 11, 29)
                     },
 
@@ -287,7 +287,7 @@ namespace LeagueStatsPage.Models
                          Name = "Kaiser",
                          Age = 21,
                          DOB = new DateTime(1998, 11, 19),
-                         Team = "MAD Lions",
+                         TeamsId = 5,
                          StartDate = new DateTime(2019, 11, 29)
                      },
 
@@ -296,7 +296,7 @@ namespace LeagueStatsPage.Models
                         Name = "Alphari",
                         Age = 20,
                         DOB = new DateTime(1999, 10, 20),
-                        Team = "Origen",
+                        TeamsId = 7,
                         StartDate = new DateTime(2018, 12, 03)
                     },
 
@@ -305,7 +305,7 @@ namespace LeagueStatsPage.Models
                         Name = "Xerxe",
                         Age = 20,
                         DOB = new DateTime(1999, 11, 05),
-                        Team = "Origen",
+                        TeamsId = 7,
                         StartDate = new DateTime(2019, 11, 19)
                     },
 
@@ -314,7 +314,7 @@ namespace LeagueStatsPage.Models
                         Name = "Nukeduck",
                         Age = 23,
                         DOB = new DateTime(1996, 05, 21),
-                        Team = "Origen",
+                        TeamsId = 7,
                         StartDate = new DateTime(2018, 12, 03)
                     },
 
@@ -323,7 +323,7 @@ namespace LeagueStatsPage.Models
                         Name = "Upset",
                         Age = 20,
                         DOB = new DateTime(1999, 12, 16),
-                        Team = "Origen",
+                        TeamsId = 7,
                         StartDate = new DateTime(2019, 11, 19)
                     },
 
@@ -332,7 +332,7 @@ namespace LeagueStatsPage.Models
                          Name = "Destiny",
                          Age = 22,
                          DOB = new DateTime(1997, 10, 27),
-                         Team = "Origen",
+                         TeamsId = 7,
                          StartDate = new DateTime(2019, 11, 19)
                      },
 
@@ -341,7 +341,7 @@ namespace LeagueStatsPage.Models
                         Name = "Dan Dan",
                         Age = 24,
                         DOB = new DateTime(1995, 09, 07),
-                        Team = "Misfits Gaming",
+                        TeamsId = 6,
                         StartDate = new DateTime(2019, 07, 18)
                     },
 
@@ -350,7 +350,7 @@ namespace LeagueStatsPage.Models
                         Name = "Razork",
                         Age = 19,
                         DOB = new DateTime(2000, 10, 07),
-                        Team = "Misfits Gaming",
+                        TeamsId = 6,
                         StartDate = new DateTime(2019, 12, 06)
                     },
 
@@ -359,7 +359,7 @@ namespace LeagueStatsPage.Models
                         Name = "Febiven",
                         Age = 23,
                         DOB = new DateTime(1996, 09, 23),
-                        Team = "Misfits Gaming",
+                        TeamsId = 6,
                         StartDate = new DateTime(2018, 11, 20)
                     },
 
@@ -368,7 +368,7 @@ namespace LeagueStatsPage.Models
                         Name = "Bvoy",
                         Age = 22,
                         DOB = new DateTime(1997, 12, 18),
-                        Team = "Misfits Gaming",
+                        TeamsId = 6,
                         StartDate = new DateTime(2019, 12, 06)
                     },
 
@@ -377,7 +377,7 @@ namespace LeagueStatsPage.Models
                         Name = "Denyk",
                         Age = 24,
                         DOB = new DateTime(1995, 04, 30),
-                        Team = "Misfits Gaming",
+                        TeamsId = 6,
                         StartDate = new DateTime(2019, 12, 06)
                     }
                 );

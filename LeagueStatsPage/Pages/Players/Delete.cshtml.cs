@@ -29,7 +29,7 @@ namespace LeagueStatsPage.Pages.Players
                 return NotFound();
             }
 
-            PlayerDetails = await _context.PlayerDetails.FirstOrDefaultAsync(m => m.ID == id);
+            PlayerDetails = await _context.PlayerDetails.FirstOrDefaultAsync(m => m.PlayerDetailsID == id);
 
             if (PlayerDetails == null)
             {

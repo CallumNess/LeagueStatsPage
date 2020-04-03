@@ -27,16 +27,16 @@ namespace LeagueStatsPage.Data
         protected override void OnModelCreating(ModelBuilder modelbuilder)
         {
             modelbuilder.Entity<Teams>().HasData(
-                new Teams {ID = 1, TeamName = "G2 Esports" },
-                new Teams {ID = 2, TeamName = "Excel Esports" },
-                new Teams {ID = 3, TeamName = "FC Schalke 04 Esports" },
-                new Teams {ID = 4, TeamName = "Fnatic" },
-                new Teams {ID = 5, TeamName = "MAD Lions" },
-                new Teams {ID = 6, TeamName = "Misfits Gaming" },
-                new Teams {ID = 7, TeamName = "Origen" },
-                new Teams {ID = 8, TeamName = "Rogue" },
-                new Teams {ID = 9, TeamName = "SK Gaming" },
-                new Teams {ID = 10, TeamName = "Team Vitality"}
+                new Teams {TeamsID = 1, TeamName = "G2 Esports" },
+                new Teams {TeamsID = 2, TeamName = "Excel Esports" },
+                new Teams {TeamsID = 3, TeamName = "FC Schalke 04 Esports" },
+                new Teams {TeamsID = 4, TeamName = "Fnatic" },
+                new Teams {TeamsID = 5, TeamName = "MAD Lions" },
+                new Teams {TeamsID = 6, TeamName = "Misfits Gaming" },
+                new Teams {TeamsID = 7, TeamName = "Origen" },
+                new Teams {TeamsID = 8, TeamName = "Rogue" },
+                new Teams {TeamsID = 9, TeamName = "SK Gaming" },
+                new Teams {TeamsID = 10, TeamName = "Team Vitality"}
                 );
         }
     }

@@ -24,9 +24,9 @@ namespace LeagueStatsPage.Pages.Players
 
         public async Task OnGetAsync()
         {
-            IQueryable<string> teamQuery = from t in _context.PlayerDetails
-                                            orderby t.Team
-                                            select t.Team;
+            //IQueryable<string> teamQuery = from t in _context.PlayerDetails
+            //                                orderby t.Team
+            //                                select t.Team;
      
             var name = from n in _context.PlayerDetails
                          select n;
@@ -37,7 +37,7 @@ namespace LeagueStatsPage.Pages.Players
             }
             else
             {
-                PlayerDetails = await _context.PlayerDetails.ToListAsync();
+                PlayerDetails = await _context.PlayerDetails.Include(x => x.Team).ToListAsync();
             }
         }
 

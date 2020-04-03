@@ -30,7 +30,7 @@ namespace LeagueStatsPage.Pages.Players
                 return NotFound();
             }
 
-            PlayerDetails = await _context.PlayerDetails.FirstOrDefaultAsync(m => m.ID == id);
+            PlayerDetails = await _context.PlayerDetails.FirstOrDefaultAsync(m => m.PlayerDetailsID == id);
 
             if (PlayerDetails == null)
             {
@@ -54,7 +54,7 @@ namespace LeagueStatsPage.Pages.Players
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!PlayerDetailsExists(PlayerDetails.ID))
+                if (!PlayerDetailsExists(PlayerDetails.PlayerDetailsID))
                 {
                     return NotFound();
                 }
@@ -69,7 +69,7 @@ namespace LeagueStatsPage.Pages.Players
 
         private bool PlayerDetailsExists(int id)
         {
-            return _context.PlayerDetails.Any(e => e.ID == id);
+            return _context.PlayerDetails.Any(e => e.PlayerDetailsID == id);
         }
     }
 }

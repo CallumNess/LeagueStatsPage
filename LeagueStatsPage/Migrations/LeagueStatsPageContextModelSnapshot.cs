@@ -21,7 +21,7 @@ namespace LeagueStatsPage.Migrations
 
             modelBuilder.Entity("LeagueStatsPage.Models.PlayerDetails", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("PlayerDetailsID")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -35,37 +35,47 @@ namespace LeagueStatsPage.Migrations
 
                     b.Property<DateTime>("StartDate");
 
-                    b.Property<string>("Team");
+                    b.Property<int>("TeamsId");
 
-                    b.HasKey("ID");
+                    b.HasKey("PlayerDetailsID");
+
+                    b.HasIndex("TeamsId");
 
                     b.ToTable("PlayerDetails");
                 });
 
             modelBuilder.Entity("LeagueStatsPage.Models.Teams", b =>
                 {
-                    b.Property<int>("ID")
+                    b.Property<int>("TeamsID")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("TeamName");
 
-                    b.HasKey("ID");
+                    b.HasKey("TeamsID");
 
                     b.ToTable("Teams");
 
                     b.HasData(
-                        new { ID = 1, TeamName = "G2 Esports" },
-                        new { ID = 2, TeamName = "Excel Esports" },
-                        new { ID = 3, TeamName = "FC Schalke 04 Esports" },
-                        new { ID = 4, TeamName = "Fnatic" },
-                        new { ID = 5, TeamName = "MAD Lions" },
-                        new { ID = 6, TeamName = "Misfits Gaming" },
-                        new { ID = 7, TeamName = "Origen" },
-                        new { ID = 8, TeamName = "Rogue" },
-                        new { ID = 9, TeamName = "SK Gaming" },
-                        new { ID = 10, TeamName = "Team Vitality" }
+                        new { TeamsID = 1, TeamName = "G2 Esports" },
+                        new { TeamsID = 2, TeamName = "Excel Esports" },
+                        new { TeamsID = 3, TeamName = "FC Schalke 04 Esports" },
+                        new { TeamsID = 4, TeamName = "Fnatic" },
+                        new { TeamsID = 5, TeamName = "MAD Lions" },
+                        new { TeamsID = 6, TeamName = "Misfits Gaming" },
+                        new { TeamsID = 7, TeamName = "Origen" },
+                        new { TeamsID = 8, TeamName = "Rogue" },
+                        new { TeamsID = 9, TeamName = "SK Gaming" },
+                        new { TeamsID = 10, TeamName = "Team Vitality" }
                     );
+                });
+
+            modelBuilder.Entity("LeagueStatsPage.Models.PlayerDetails", b =>
+                {
+                    b.HasOne("LeagueStatsPage.Models.Teams", "Team")
+                        .WithMany("Players")
+                        .HasForeignKey("TeamsId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }
