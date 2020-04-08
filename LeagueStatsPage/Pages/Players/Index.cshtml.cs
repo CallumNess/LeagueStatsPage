@@ -18,30 +18,54 @@ namespace LeagueStatsPage.Pages.Players
         public IndexModel(LeagueStatsPage.Data.LeagueStatsPageContext context)
         {
             _context = context;
+            Teams = new List<Teams>();
         }
 
         public IList<PlayerDetails> PlayerDetails { get;set; }
 
+        [BindProperty]
+        public int SelectedTeam { get; set; }
+
+        public List<Teams> Teams { get; set; }
+
         public async Task OnGetAsync()
         {
-            //IQueryable<string> teamQuery = from t in _context.PlayerDetails
-            //                                orderby t.Team
-            //                                select t.Team;
-     
-            var name = from n in _context.PlayerDetails
-                         select n;
+            //IQueryable<string> teamQuery = from t in _context.Teams
+            //                               orderby t.TeamName
+            //                               select t.TeamName;
 
-            if (!string.IsNullOrWhiteSpace(SearchString))
-            {
-                PlayerDetails = await _context.PlayerDetails.Where(x => x.Name.Contains(SearchString)).ToListAsync();
-            }
-            else
-            {
+            //var name = from n in _context.PlayerDetails
+            //             select n;
+
+            Teams = await _context.Teams.ToListAsync();
+
+            //if (!string.IsNullOrWhiteSpace(SearchString))
+            //{
+            //    PlayerDetails = await _context.PlayerDetails.Where(x => x.Name.Contains(SearchString)).ToListAsync();
+            //}
+            //else
+            //{
                 PlayerDetails = await _context.PlayerDetails.Include(x => x.Team).ToListAsync();
-            }
+            //}
+
         }
 
-        public IList<PlayerDetails> name { get; set; }
+        public async Task<IActionResult> OnPostAsync()
+        {
+            // Repopulate the teams list
+            Teams = await _context.Teams.ToListAsync();
+            // If selected team is greater than zero then get all the players where their team id matches the selected team
+            if (SelectedTeam > 0)
+            {
+                PlayerDetails = await _context.PlayerDetails
+                    .Where(x => x.TeamsId == SelectedTeam)
+                    .Include(x => x.Team)
+                    .ToListAsync();
+            }
+            return Page();
+        }
+
+        public IList<PlayerDetails> Name { get; set; }
 
         [BindProperty(SupportsGet = true)]
         public string SearchString { get; set; }

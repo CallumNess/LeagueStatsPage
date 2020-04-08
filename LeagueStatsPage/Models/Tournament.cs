@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
-using LeagueStatsPage.Data;
-using Microsoft.EntityFrameworkCore;
 
 namespace LeagueStatsPage.Models
 {
-    public class Teams
+    public class Tournament
     {
-        public int TeamsID { get; set; }
-        public string TeamName { get; set; }
+        public int TournamentID { get; set; }
+
+        [DisplayName("Tournament Name")]
+        public string TournamentName { get; set; }
 
         public IList<TournamentTeam> TournamentTeams { get; set; }
     }

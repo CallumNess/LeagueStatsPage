@@ -1,0 +1,36 @@
+﻿@page
+@model LeagueStatsPage.Pages.Tournaments.IndexModel
+
+@{
+    ViewData["Title"] = "Tournaments";
+}
+
+<h2>Tournaments</h2>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Tournament[0].TournamentName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Tournament) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TournamentName)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.TournamentID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.TournamentID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.TournamentID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

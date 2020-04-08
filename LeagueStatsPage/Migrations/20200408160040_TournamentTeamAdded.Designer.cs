@@ -4,14 +4,16 @@ using LeagueStatsPage.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace LeagueStatsPage.Migrations
 {
     [DbContext(typeof(LeagueStatsPageContext))]
-    partial class LeagueStatsPageContextModelSnapshot : ModelSnapshot
+    [Migration("20200408160040_TournamentTeamAdded")]
+    partial class TournamentTeamAdded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -80,7 +82,7 @@ namespace LeagueStatsPage.Migrations
 
                     b.HasKey("TournamentID");
 
-                    b.ToTable("Tournaments");
+                    b.ToTable("Tourtaments");
 
                     b.HasData(
                         new { TournamentID = 1, TournamentName = "LEC" },

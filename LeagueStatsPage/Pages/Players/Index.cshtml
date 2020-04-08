@@ -10,12 +10,14 @@
 <p>
     <a asp-page="Create">Create New</a>
 </p>
-    <form method="get">
-        <p>
-            Player Name: <input type="text" asp-for="SearchString" />
-            <input type="submit" value="Filter" />
-        </p>
-    </form>
+
+<form method="post">
+    @Html.DropDownListFor(t => t.SelectedTeam, new SelectList(Model.Teams, "TeamsID", "TeamName"), "Select Team", new { @class = "form-control" })
+    <p>
+        Player Name: <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
 <table class="table">
     <thead>
         <tr>
