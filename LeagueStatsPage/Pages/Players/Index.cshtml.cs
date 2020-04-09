@@ -30,24 +30,8 @@ namespace LeagueStatsPage.Pages.Players
 
         public async Task OnGetAsync()
         {
-            //IQueryable<string> teamQuery = from t in _context.Teams
-            //                               orderby t.TeamName
-            //                               select t.TeamName;
-
-            //var name = from n in _context.PlayerDetails
-            //             select n;
-
             Teams = await _context.Teams.ToListAsync();
-
-            //if (!string.IsNullOrWhiteSpace(SearchString))
-            //{
-            //    PlayerDetails = await _context.PlayerDetails.Where(x => x.Name.Contains(SearchString)).ToListAsync();
-            //}
-            //else
-            //{
-                PlayerDetails = await _context.PlayerDetails.Include(x => x.Team).ToListAsync();
-            //}
-
+            PlayerDetails = await _context.PlayerDetails.Include(x => x.Team).ToListAsync();
         }
 
         public async Task<IActionResult> OnPostAsync()
@@ -64,16 +48,5 @@ namespace LeagueStatsPage.Pages.Players
             }
             return Page();
         }
-
-        public IList<PlayerDetails> Name { get; set; }
-
-        [BindProperty(SupportsGet = true)]
-        public string SearchString { get; set; }
-
-        public SelectList Names { get; set; }
-
-        [BindProperty(SupportsGet = true)]
-        public string PlayerName { get; set; }
-
     }
 }

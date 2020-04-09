@@ -41,10 +41,10 @@ namespace LeagueStatsPage.Data
                  modelbuilder.Entity<Tournament>().HasData(
                 new Tournament { TournamentID = 1, TournamentName = "LEC"},
                 new Tournament { TournamentID = 2, TournamentName = "LCS"},
-                new Tournament { TournamentID = 3, TournamentName = "Worlds" },
-                new Tournament { TournamentID = 4, TournamentName = "MSI" },
                 new Tournament { TournamentID = 5, TournamentName = "LCK"},
-                new Tournament { TournamentID = 6, TournamentName = "LPL" } 
+                new Tournament { TournamentID = 6, TournamentName = "LPL"},
+                new Tournament { TournamentID = 4, TournamentName = "MSI"},
+                new Tournament { TournamentID = 3, TournamentName = "Worlds"}
                 );
             modelbuilder.Entity<TournamentTeam>().HasKey(tt => new { tt.TournamentID, tt.TeamsID });
         }

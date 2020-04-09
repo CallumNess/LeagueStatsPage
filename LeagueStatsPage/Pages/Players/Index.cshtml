@@ -12,9 +12,8 @@
 </p>
 
 <form method="post">
-    @Html.DropDownListFor(t => t.SelectedTeam, new SelectList(Model.Teams, "TeamsID", "TeamName"), "Select Team", new { @class = "form-control" })
     <p>
-        Player Name: <input type="text" asp-for="SearchString" />
+        @Html.DropDownListFor(t => t.SelectedTeam, new SelectList(Model.Teams, "TeamsID", "TeamName"), "Select Team", new { @class = "form-control" })
         <input type="submit" value="Filter" />
     </p>
 </form>

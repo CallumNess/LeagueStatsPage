@@ -290,14 +290,14 @@ namespace LeagueStatsPage.Models
                          StartDate = new DateTime(2019, 11, 29)
                      },
 
-                        new PlayerDetails
-                        {
-                            Name = "Alphari",
-                            Age = 20,
-                            DOB = new DateTime(1999, 10, 20),
-                            TeamsId = 7,
-                            StartDate = new DateTime(2018, 12, 03)
-                        },
+                    new PlayerDetails
+                    {
+                        Name = "Alphari",
+                        Age = 20,
+                        DOB = new DateTime(1999, 10, 20),
+                        TeamsId = 7,
+                        StartDate = new DateTime(2018, 12, 03)
+                    },
 
                     new PlayerDetails
                     {
@@ -378,7 +378,99 @@ namespace LeagueStatsPage.Models
                         DOB = new DateTime(1995, 04, 30),
                         TeamsId = 6,
                         StartDate = new DateTime(2019, 12, 06)
-                    });
+                    },
+
+                    new PlayerDetails
+                    {
+                        Name = "Finn",
+                        Age = 20,
+                        DOB = new DateTime(1999, 06, 03),
+                        TeamsId = 8,
+                        StartDate = new DateTime(2019, 02, 12)
+                    },
+
+                    new PlayerDetails
+                    {
+                        Name = "Inspired",
+                        Age = 18,
+                        DOB = new DateTime(2002, 01, 24),
+                        TeamsId = 8,
+                        StartDate = new DateTime(2019, 05, 27)
+                    },
+
+                    new PlayerDetails
+                    {
+                        Name = "Larssen",
+                        Age = 20,
+                        DOB = new DateTime(2000, 03, 30),
+                        TeamsId = 8,
+                        StartDate = new DateTime(2019, 05, 28)
+                    },
+
+                    new PlayerDetails
+                    {
+                        Name = "Hans Sama",
+                        Age = 20,
+                        DOB = new DateTime(1999, 09, 02),
+                        TeamsId = 8,
+                        StartDate = new DateTime(2019, 11, 18)
+                    },
+
+                    new PlayerDetails
+                    {
+                        Name = "Vander",
+                        Age = 25,
+                        DOB = new DateTime(1994, 04, 18),
+                        TeamsId = 8,
+                        StartDate = new DateTime(2019, 02, 12)
+                    },
+
+                    new PlayerDetails
+                    {
+                        Name = "Cabochard",
+                        Age = 22,
+                        DOB = new DateTime(1997, 04, 14),
+                        TeamsId = 10,
+                        StartDate = new DateTime(2015, 12, 14)
+                    },
+
+                    new PlayerDetails
+                    {
+                        Name = "Skeanz",
+                        Age = 19,
+                        DOB = new DateTime(2000, 09, 25),
+                        TeamsId = 10,
+                        StartDate = new DateTime(2019, 12, 07)
+                    },
+
+                    new PlayerDetails
+                    {
+                        Name = "Selfie",
+                        Age = 23,
+                        DOB = new DateTime(1997, 02, 07),
+                        TeamsId = 10,
+                        StartDate = new DateTime(2020, 03, 04)
+                    },
+
+                    new PlayerDetails
+                    {
+                        Name = "Comp",
+                        Age = 18,
+                        DOB = new DateTime(2001, 12, 20),
+                        TeamsId = 10,
+                        StartDate = new DateTime(2019, 12, 07)
+                    },
+
+                    new PlayerDetails
+                    {
+                        Name = "Steelback",
+                        Age = 23,
+                        DOB = new DateTime(1996, 08, 16),
+                        TeamsId = 10,
+                        StartDate = new DateTime(2020, 02, 14)
+                    }
+                    );
+
             if (context.TournamentTeams.Any())
             {
                 var teams = context.TournamentTeams;
@@ -386,11 +478,57 @@ namespace LeagueStatsPage.Models
                 context.SaveChanges();
             }
             context.TournamentTeams.AddRange(
-                 new TournamentTeam
-                 {
-                     TournamentID = 1,
-                     TeamsID = 1
-                 });
+                new TournamentTeam
+                {
+                    TournamentID = 1,
+                    TeamsID = 1
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 1,
+                    TeamsID = 2
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 1,
+                    TeamsID = 3
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 1,
+                    TeamsID = 4
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 1,
+                    TeamsID = 5
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 1,
+                    TeamsID = 6
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 1,
+                    TeamsID = 7
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 1,
+                    TeamsID = 8
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 1,
+                    TeamsID = 9
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 1,
+                    TeamsID = 10
+                }
+                 );
             context.SaveChanges();
         }
     }
