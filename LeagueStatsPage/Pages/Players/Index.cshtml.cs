@@ -21,7 +21,7 @@ namespace LeagueStatsPage.Pages.Players
             Teams = new List<Teams>();
         }
 
-        public IList<PlayerDetails> PlayerDetails { get;set; }
+        public IList<PlayerDetails> PlayerDetails { get; set; }
 
         [BindProperty]
         public int SelectedTeam { get; set; }
@@ -48,5 +48,34 @@ namespace LeagueStatsPage.Pages.Players
             }
             return Page();
         }
+
+        //public string PlayerSort { get; set; }
+        //public string TeamSort { get; set; }
+        //public string CurrentSort { get; set; }
+
+        //public IList<PlayerDetails> Players { get; set; }
+
+        //public async Task OnPostAsync(string sortOrder)
+        //{
+        //    PlayerSort = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+        //    TeamSort = sortOrder == "team" ? "team_desc" : "team";
+
+        //    IQueryable<PlayerDetails> Player = from s in _context.PlayerDetails
+        //                                       select s;
+
+        //    switch (sortOrder)
+        //    {
+        //        case "name_desc":
+        //            Player = Player.OrderByDescending(s => s.Name);
+        //            break;
+        //        case "team":
+        //            Player = Player.OrderBy(s => s.Age);
+        //            break;
+        //        default:
+        //            Player = Player.OrderBy(s => s.Name);
+        //            break;
+        //    }
+        //    Players = await Player.AsNoTracking().ToListAsync();
+        //}
     }
 }

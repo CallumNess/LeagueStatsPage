@@ -17,16 +17,16 @@
         <input type="submit" value="Filter" />
     </p>
 </form>
-<table class="table">
+    <table data-toggle="table" data-search="true">
     <thead>
         <tr>
-            <th>
+            <th data-sortable="true">
                 @Html.DisplayNameFor(model => model.PlayerDetails[0].Name)
             </th>
-            <th>
+            <th data-sortable="true">
                 @Html.DisplayNameFor(model => model.PlayerDetails[0].Team.TeamName)
             </th>
-            <th>
+            <th data-sortable="true">
                 @Html.DisplayNameFor(model => model.PlayerDetails[0].Age)
             </th>
             <th>
@@ -39,29 +39,31 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model.PlayerDetails) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Team.TeamName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Age)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DOB)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.StartDate)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.PlayerDetailsID">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.PlayerDetailsID">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.PlayerDetailsID">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.PlayerDetails)
+        {
+            <tr>
+                <td>
+                    <span class="flag-icon flag-icon-@item.Nationality"></span>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Team.TeamName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Age)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DOB)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StartDate)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.PlayerDetailsID">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.PlayerDetailsID">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.PlayerDetailsID">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

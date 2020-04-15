@@ -10,7 +10,7 @@
 <p>
     <a asp-page="Create">Create New</a>
 </p>
-<form method="post">
+<form method="post" tabindex="2">
     <p>
         @Html.DropDownListFor(t => t.SelectedTournament, new SelectList(Model.Tournaments, "TournamentID", "TournamentName"), "Select Tournament", new { @class = "form-control" })
         <input type="submit" value="Filter" />

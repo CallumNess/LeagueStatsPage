@@ -11,6 +11,7 @@ namespace LeagueStatsPage.Models
     public class Teams
     {
         public int TeamsID { get; set; }
+        [DisplayName("Team Name")]
         public string TeamName { get; set; }
 
         public IList<TournamentTeam> TournamentTeams { get; set; }

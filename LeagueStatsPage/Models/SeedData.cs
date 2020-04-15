@@ -26,7 +26,8 @@ namespace LeagueStatsPage.Models
                         Age = 21,
                         DOB = new DateTime(1998, 11, 09),
                         TeamsId = 1,
-                        StartDate = new DateTime(2017, 12, 8)
+                        StartDate = new DateTime(2017, 12, 8),
+                        Nationality = "dk"
                     },
 
                     new PlayerDetails
@@ -35,7 +36,8 @@ namespace LeagueStatsPage.Models
                         Age = 24,
                         DOB = new DateTime(1995, 07, 23),
                         TeamsId = 1,
-                        StartDate = new DateTime(2017, 12, 8)
+                        StartDate = new DateTime(2017, 12, 8),
+                        Nationality = "pl"
                     },
 
                     new PlayerDetails
@@ -44,7 +46,8 @@ namespace LeagueStatsPage.Models
                         Age = 21,
                         DOB = new DateTime(1998, 09, 30),
                         TeamsId = 1,
-                        StartDate = new DateTime(2015, 06, 02)
+                        StartDate = new DateTime(2015, 06, 02),
+                        Nationality = "hr"
                     },
 
                     new PlayerDetails
@@ -53,7 +56,8 @@ namespace LeagueStatsPage.Models
                         Age = 20,
                         DOB = new DateTime(1999, 11, 17),
                         TeamsId = 1,
-                        StartDate = new DateTime(2018, 11, 29)
+                        StartDate = new DateTime(2018, 11, 29),
+                        Nationality = "dk"
                     },
 
                      new PlayerDetails
@@ -62,7 +66,8 @@ namespace LeagueStatsPage.Models
                          Age = 21,
                          DOB = new DateTime(1998, 11, 02),
                          TeamsId = 1,
-                         StartDate = new DateTime(2018, 11, 29)
+                         StartDate = new DateTime(2018, 11, 29),
+                         Nationality = "si"
                      },
 
                    new PlayerDetails
@@ -71,7 +76,8 @@ namespace LeagueStatsPage.Models
                        Age = 1,
                        DOB = new DateTime(2019, 07, 04),
                        TeamsId = 2,
-                       StartDate = new DateTime(2018, 12, 07)
+                       StartDate = new DateTime(2018, 12, 07),
+                       Nationality = "kr"
                    },
 
                     new PlayerDetails
@@ -80,7 +86,8 @@ namespace LeagueStatsPage.Models
                         Age = 24,
                         DOB = new DateTime(1996, 03, 19),
                         TeamsId = 2,
-                        StartDate = new DateTime(2018, 12, 02)
+                        StartDate = new DateTime(2018, 12, 02),
+                        Nationality = "gb"
                     },
 
                     new PlayerDetails
@@ -89,7 +96,8 @@ namespace LeagueStatsPage.Models
                         Age = 22,
                         DOB = new DateTime(1997, 07, 15),
                         TeamsId = 2,
-                        StartDate = new DateTime(2019, 11, 29)
+                        StartDate = new DateTime(2019, 11, 29),
+                        Nationality = "kr"
                     },
 
                     new PlayerDetails
@@ -98,7 +106,8 @@ namespace LeagueStatsPage.Models
                         Age = 19,
                         DOB = new DateTime(2000, 04, 07),
                         TeamsId = 2,
-                        StartDate = new DateTime(2019, 12, 04)
+                        StartDate = new DateTime(2019, 12, 04),
+                        Nationality = "cz"
                     },
 
                      new PlayerDetails
@@ -107,7 +116,8 @@ namespace LeagueStatsPage.Models
                          Age = 20,
                          DOB = new DateTime(1999, 12, 27),
                          TeamsId = 2,
-                         StartDate = new DateTime(2019, 12, 06)
+                         StartDate = new DateTime(2019, 12, 06),
+                         Nationality = "no"
                      },
 
                       new PlayerDetails
@@ -116,7 +126,8 @@ namespace LeagueStatsPage.Models
                           Age = 23,
                           DOB = new DateTime(1996, 09, 07),
                           TeamsId = 9,
-                          StartDate = new DateTime(2019, 05, 22)
+                          StartDate = new DateTime(2019, 05, 22),
+                          Nationality = "hr"
                       },
 
                     new PlayerDetails
@@ -125,7 +136,8 @@ namespace LeagueStatsPage.Models
                         Age = 24,
                         DOB = new DateTime(1995, 07, 11),
                         TeamsId = 9,
-                        StartDate = new DateTime(2019, 12, 16)
+                        StartDate = new DateTime(2019, 12, 16),
+                        Nationality = "kr"
                     },
 
                     new PlayerDetails
@@ -134,7 +146,8 @@ namespace LeagueStatsPage.Models
                         Age = 21,
                         DOB = new DateTime(1998, 12, 10),
                         TeamsId = 9,
-                        StartDate = new DateTime(2019, 08, 01)
+                        StartDate = new DateTime(2019, 08, 01),
+                        Nationality = "de"
                     },
 
                     new PlayerDetails
@@ -143,7 +156,8 @@ namespace LeagueStatsPage.Models
                         Age = 21,
                         DOB = new DateTime(1998, 04, 17),
                         TeamsId = 9,
-                        StartDate = new DateTime(2018, 12, 20)
+                        StartDate = new DateTime(2018, 12, 20),
+                        Nationality = "si"
                     },
 
                      new PlayerDetails
@@ -152,7 +166,8 @@ namespace LeagueStatsPage.Models
                          Age = 22,
                          DOB = new DateTime(1997, 12, 27),
                          TeamsId = 9,
-                         StartDate = new DateTime(2019, 12, 16)
+                         StartDate = new DateTime(2019, 12, 16),
+                         Nationality = "hr"
                      },
 
                      new PlayerDetails
@@ -161,7 +176,8 @@ namespace LeagueStatsPage.Models
                          Age = 21,
                          DOB = new DateTime(1998, 12, 24),
                          TeamsId = 4,
-                         StartDate = new DateTime(2018, 01, 07)
+                         StartDate = new DateTime(2018, 01, 07),
+                         Nationality = "de"
                      },
 
                     new PlayerDetails
@@ -170,7 +186,8 @@ namespace LeagueStatsPage.Models
                         Age = 20,
                         DOB = new DateTime(1999, 12, 15),
                         TeamsId = 4,
-                        StartDate = new DateTime(2019, 11, 21)
+                        StartDate = new DateTime(2019, 11, 21),
+                        Nationality = "pl"
                     },
 
                     new PlayerDetails
@@ -179,7 +196,8 @@ namespace LeagueStatsPage.Models
                         Age = 20,
                         DOB = new DateTime(1999, 07, 26),
                         TeamsId = 4,
-                        StartDate = new DateTime(2018, 11, 29)
+                        StartDate = new DateTime(2018, 11, 29),
+                        Nationality = "si"
                     },
 
                     new PlayerDetails
@@ -188,7 +206,8 @@ namespace LeagueStatsPage.Models
                         Age = 23,
                         DOB = new DateTime(1996, 09, 20),
                         TeamsId = 4,
-                        StartDate = new DateTime(2015, 05, 14)
+                        StartDate = new DateTime(2015, 05, 14),
+                        Nationality = "se"
                     },
 
                      new PlayerDetails
@@ -197,7 +216,8 @@ namespace LeagueStatsPage.Models
                          Age = 24,
                          DOB = new DateTime(1995, 04, 30),
                          TeamsId = 4,
-                         StartDate = new DateTime(2017, 12, 14)
+                         StartDate = new DateTime(2017, 12, 14),
+                         Nationality = "bg"
                      },
 
                     new PlayerDetails
@@ -206,7 +226,8 @@ namespace LeagueStatsPage.Models
                         Age = 25,
                         DOB = new DateTime(1995, 01, 18),
                         TeamsId = 3,
-                        StartDate = new DateTime(2018, 12, 12)
+                        StartDate = new DateTime(2018, 12, 12),
+                        Nationality = "ro"
                     },
 
                     new PlayerDetails
@@ -215,7 +236,8 @@ namespace LeagueStatsPage.Models
                         Age = 23,
                         DOB = new DateTime(1997, 01, 05),
                         TeamsId = 3,
-                        StartDate = new DateTime(2019, 12, 10)
+                        StartDate = new DateTime(2019, 12, 10),
+                        Nationality = "de"
                     },
 
                     new PlayerDetails
@@ -224,7 +246,8 @@ namespace LeagueStatsPage.Models
                         Age = 1,
                         DOB = new DateTime(2019, 09, 10),
                         TeamsId = 3,
-                        StartDate = new DateTime(2018, 11, 30)
+                        StartDate = new DateTime(2018, 11, 30),
+                        Nationality = "de"
                     },
 
                     new PlayerDetails
@@ -233,7 +256,8 @@ namespace LeagueStatsPage.Models
                         Age = 21,
                         DOB = new DateTime(1999, 03, 23),
                         TeamsId = 3,
-                        StartDate = new DateTime(2020, 02, 13)
+                        StartDate = new DateTime(2020, 02, 13),
+                        Nationality = "bg"
                     },
 
                      new PlayerDetails
@@ -242,7 +266,8 @@ namespace LeagueStatsPage.Models
                          Age = 1,
                          DOB = new DateTime(2019, 03, 07),
                          TeamsId = 3,
-                         StartDate = new DateTime(2019, 12, 02)
+                         StartDate = new DateTime(2019, 12, 02),
+                         Nationality = "kr"
                      },
 
                       new PlayerDetails
@@ -251,7 +276,8 @@ namespace LeagueStatsPage.Models
                           Age = 1,
                           DOB = new DateTime(2019, 01, 16),
                           TeamsId = 5,
-                          StartDate = new DateTime(2019, 11, 29)
+                          StartDate = new DateTime(2019, 11, 29),
+                          Nationality = "ro"
                       },
 
                     new PlayerDetails
@@ -260,7 +286,8 @@ namespace LeagueStatsPage.Models
                         Age = 19,
                         DOB = new DateTime(2001, 02, 25),
                         TeamsId = 5,
-                        StartDate = new DateTime(2019, 11, 29)
+                        StartDate = new DateTime(2019, 11, 29),
+                        Nationality = "it"
                     },
 
                     new PlayerDetails
@@ -269,7 +296,8 @@ namespace LeagueStatsPage.Models
                         Age = 20,
                         DOB = new DateTime(2000, 03, 14),
                         TeamsId = 5,
-                        StartDate = new DateTime(2019, 11, 29)
+                        StartDate = new DateTime(2019, 11, 29),
+                        Nationality = "cz"
                     },
 
                     new PlayerDetails
@@ -278,7 +306,8 @@ namespace LeagueStatsPage.Models
                         Age = 18,
                         DOB = new DateTime(2002, 01, 31),
                         TeamsId = 5,
-                        StartDate = new DateTime(2019, 11, 29)
+                        StartDate = new DateTime(2019, 11, 29),
+                        Nationality = "cz"
                     },
 
                      new PlayerDetails
@@ -287,7 +316,8 @@ namespace LeagueStatsPage.Models
                          Age = 21,
                          DOB = new DateTime(1998, 11, 19),
                          TeamsId = 5,
-                         StartDate = new DateTime(2019, 11, 29)
+                         StartDate = new DateTime(2019, 11, 29),
+                         Nationality = "de"
                      },
 
                     new PlayerDetails
@@ -296,7 +326,8 @@ namespace LeagueStatsPage.Models
                         Age = 20,
                         DOB = new DateTime(1999, 10, 20),
                         TeamsId = 7,
-                        StartDate = new DateTime(2018, 12, 03)
+                        StartDate = new DateTime(2018, 12, 03),
+                        Nationality = "gb"
                     },
 
                     new PlayerDetails
@@ -305,7 +336,8 @@ namespace LeagueStatsPage.Models
                         Age = 20,
                         DOB = new DateTime(1999, 11, 05),
                         TeamsId = 7,
-                        StartDate = new DateTime(2019, 11, 19)
+                        StartDate = new DateTime(2019, 11, 19),
+                        Nationality = "ro"
                     },
 
                     new PlayerDetails
@@ -314,7 +346,8 @@ namespace LeagueStatsPage.Models
                         Age = 23,
                         DOB = new DateTime(1996, 05, 21),
                         TeamsId = 7,
-                        StartDate = new DateTime(2018, 12, 03)
+                        StartDate = new DateTime(2018, 12, 03),
+                        Nationality = "no"
                     },
 
                     new PlayerDetails
@@ -323,7 +356,8 @@ namespace LeagueStatsPage.Models
                         Age = 20,
                         DOB = new DateTime(1999, 12, 16),
                         TeamsId = 7,
-                        StartDate = new DateTime(2019, 11, 19)
+                        StartDate = new DateTime(2019, 11, 19),
+                        Nationality = "de"
                     },
 
                      new PlayerDetails
@@ -332,7 +366,8 @@ namespace LeagueStatsPage.Models
                          Age = 22,
                          DOB = new DateTime(1997, 10, 27),
                          TeamsId = 7,
-                         StartDate = new DateTime(2019, 11, 19)
+                         StartDate = new DateTime(2019, 11, 19),
+                         Nationality = "au"
                      },
 
                     new PlayerDetails
@@ -341,7 +376,8 @@ namespace LeagueStatsPage.Models
                         Age = 24,
                         DOB = new DateTime(1995, 09, 07),
                         TeamsId = 6,
-                        StartDate = new DateTime(2019, 07, 18)
+                        StartDate = new DateTime(2019, 07, 18),
+                        Nationality = "es"
                     },
 
                     new PlayerDetails
@@ -350,7 +386,8 @@ namespace LeagueStatsPage.Models
                         Age = 19,
                         DOB = new DateTime(2000, 10, 07),
                         TeamsId = 6,
-                        StartDate = new DateTime(2019, 12, 06)
+                        StartDate = new DateTime(2019, 12, 06),
+                        Nationality = "es"
                     },
 
                     new PlayerDetails
@@ -359,7 +396,8 @@ namespace LeagueStatsPage.Models
                         Age = 23,
                         DOB = new DateTime(1996, 09, 23),
                         TeamsId = 6,
-                        StartDate = new DateTime(2018, 11, 20)
+                        StartDate = new DateTime(2018, 11, 20),
+                        Nationality = "nl"
                     },
 
                     new PlayerDetails
@@ -368,7 +406,8 @@ namespace LeagueStatsPage.Models
                         Age = 22,
                         DOB = new DateTime(1997, 12, 18),
                         TeamsId = 6,
-                        StartDate = new DateTime(2019, 12, 06)
+                        StartDate = new DateTime(2019, 12, 06),
+                        Nationality = "kr"
                     },
 
                     new PlayerDetails
@@ -377,7 +416,8 @@ namespace LeagueStatsPage.Models
                         Age = 24,
                         DOB = new DateTime(1995, 04, 30),
                         TeamsId = 6,
-                        StartDate = new DateTime(2019, 12, 06)
+                        StartDate = new DateTime(2019, 12, 06),
+                        Nationality = "cz"
                     },
 
                     new PlayerDetails
@@ -386,7 +426,8 @@ namespace LeagueStatsPage.Models
                         Age = 20,
                         DOB = new DateTime(1999, 06, 03),
                         TeamsId = 8,
-                        StartDate = new DateTime(2019, 02, 12)
+                        StartDate = new DateTime(2019, 02, 12),
+                        Nationality = "se"
                     },
 
                     new PlayerDetails
@@ -395,7 +436,8 @@ namespace LeagueStatsPage.Models
                         Age = 18,
                         DOB = new DateTime(2002, 01, 24),
                         TeamsId = 8,
-                        StartDate = new DateTime(2019, 05, 27)
+                        StartDate = new DateTime(2019, 05, 27),
+                        Nationality = "pl"
                     },
 
                     new PlayerDetails
@@ -404,7 +446,8 @@ namespace LeagueStatsPage.Models
                         Age = 20,
                         DOB = new DateTime(2000, 03, 30),
                         TeamsId = 8,
-                        StartDate = new DateTime(2019, 05, 28)
+                        StartDate = new DateTime(2019, 05, 28),
+                        Nationality = "se"
                     },
 
                     new PlayerDetails
@@ -413,7 +456,8 @@ namespace LeagueStatsPage.Models
                         Age = 20,
                         DOB = new DateTime(1999, 09, 02),
                         TeamsId = 8,
-                        StartDate = new DateTime(2019, 11, 18)
+                        StartDate = new DateTime(2019, 11, 18),
+                        Nationality = "nl"
                     },
 
                     new PlayerDetails
@@ -422,7 +466,8 @@ namespace LeagueStatsPage.Models
                         Age = 25,
                         DOB = new DateTime(1994, 04, 18),
                         TeamsId = 8,
-                        StartDate = new DateTime(2019, 02, 12)
+                        StartDate = new DateTime(2019, 02, 12),
+                        Nationality = "pl"
                     },
 
                     new PlayerDetails
@@ -431,7 +476,8 @@ namespace LeagueStatsPage.Models
                         Age = 22,
                         DOB = new DateTime(1997, 04, 14),
                         TeamsId = 10,
-                        StartDate = new DateTime(2015, 12, 14)
+                        StartDate = new DateTime(2015, 12, 14),
+                        Nationality = "nl"
                     },
 
                     new PlayerDetails
@@ -440,7 +486,8 @@ namespace LeagueStatsPage.Models
                         Age = 19,
                         DOB = new DateTime(2000, 09, 25),
                         TeamsId = 10,
-                        StartDate = new DateTime(2019, 12, 07)
+                        StartDate = new DateTime(2019, 12, 07),
+                        Nationality = "nl"
                     },
 
                     new PlayerDetails
@@ -449,7 +496,8 @@ namespace LeagueStatsPage.Models
                         Age = 23,
                         DOB = new DateTime(1997, 02, 07),
                         TeamsId = 10,
-                        StartDate = new DateTime(2020, 03, 04)
+                        StartDate = new DateTime(2020, 03, 04),
+                        Nationality = "pl"
                     },
 
                     new PlayerDetails
@@ -458,7 +506,8 @@ namespace LeagueStatsPage.Models
                         Age = 18,
                         DOB = new DateTime(2001, 12, 20),
                         TeamsId = 10,
-                        StartDate = new DateTime(2019, 12, 07)
+                        StartDate = new DateTime(2019, 12, 07),
+                        Nationality = "gr"
                     },
 
                     new PlayerDetails
@@ -467,7 +516,8 @@ namespace LeagueStatsPage.Models
                         Age = 23,
                         DOB = new DateTime(1996, 08, 16),
                         TeamsId = 10,
-                        StartDate = new DateTime(2020, 02, 14)
+                        StartDate = new DateTime(2020, 02, 14),
+                        Nationality = "nl"
                     }
                     );
 

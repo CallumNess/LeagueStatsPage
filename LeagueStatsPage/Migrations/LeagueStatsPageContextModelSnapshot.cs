@@ -33,6 +33,8 @@ namespace LeagueStatsPage.Migrations
 
                     b.Property<string>("Name");
 
+                    b.Property<string>("Nationality");
+
                     b.Property<DateTime>("StartDate");
 
                     b.Property<int>("TeamsId");
@@ -85,10 +87,10 @@ namespace LeagueStatsPage.Migrations
                     b.HasData(
                         new { TournamentID = 1, TournamentName = "LEC" },
                         new { TournamentID = 2, TournamentName = "LCS" },
-                        new { TournamentID = 3, TournamentName = "Worlds" },
-                        new { TournamentID = 4, TournamentName = "MSI" },
                         new { TournamentID = 5, TournamentName = "LCK" },
-                        new { TournamentID = 6, TournamentName = "LPL" }
+                        new { TournamentID = 6, TournamentName = "LPL" },
+                        new { TournamentID = 4, TournamentName = "MSI" },
+                        new { TournamentID = 3, TournamentName = "Worlds" }
                     );
                 });
 

@@ -24,6 +24,8 @@ namespace LeagueStatsPage.Models
 
         public bool IsActive { get; set; }
 
+        public string Nationality { get; set; }
+
         public int TeamsId { get; set; }
       
         public Teams Team { get; set; }
