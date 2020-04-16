@@ -9,6 +9,10 @@
     {
       "library": "flag-icon-css@3.4.6",
       "destination": "wwwroot/lib/flag-icon-css"
+    },
+    {
+      "library": "popper.js@2.3.3",
+      "destination": "wwwroot/lib/popper.js"
     }
   ]
 }
