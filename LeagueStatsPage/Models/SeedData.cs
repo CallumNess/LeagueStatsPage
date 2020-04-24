@@ -527,6 +527,7 @@ namespace LeagueStatsPage.Models
                 context.RemoveRange(teams);
                 context.SaveChanges();
             }
+
             context.TournamentTeams.AddRange(
                 new TournamentTeam
                 {
@@ -577,8 +578,192 @@ namespace LeagueStatsPage.Models
                 {
                     TournamentID = 1,
                     TeamsID = 10
-                }
-                 );
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 2,
+                    TeamsID = 11
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 2,
+                    TeamsID = 12
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 2,
+                    TeamsID = 13
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 2,
+                    TeamsID = 14
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 2,
+                    TeamsID = 15
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 2,
+                    TeamsID = 16
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 2,
+                    TeamsID = 17
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 2,
+                    TeamsID = 18
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 2,
+                    TeamsID = 19
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 2,
+                    TeamsID = 20
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 5,
+                    TeamsID = 21
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 5,
+                    TeamsID = 22
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 5,
+                    TeamsID = 23
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 5,
+                    TeamsID = 24
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 5,
+                    TeamsID = 25
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 5,
+                    TeamsID = 26
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 5,
+                    TeamsID = 27
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 5,
+                    TeamsID = 28
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 5,
+                    TeamsID = 29
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 5,
+                    TeamsID = 30
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 6,
+                    TeamsID = 31
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 6,
+                    TeamsID = 32
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 6,
+                    TeamsID = 33
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 6,
+                    TeamsID = 34
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 6,
+                    TeamsID = 35
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 6,
+                    TeamsID = 36
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 6,
+                    TeamsID = 37
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 6,
+                    TeamsID = 38
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 6,
+                    TeamsID = 39
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 6,
+                    TeamsID = 40
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 6,
+                    TeamsID = 41
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 6,
+                    TeamsID = 42
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 6,
+                    TeamsID = 43
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 6,
+                    TeamsID = 44
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 6,
+                    TeamsID = 45
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 6,
+                    TeamsID = 46
+                },
+                new TournamentTeam
+                {
+                    TournamentID = 6,
+                    TeamsID = 47
+                });
             context.SaveChanges();
         }
     }

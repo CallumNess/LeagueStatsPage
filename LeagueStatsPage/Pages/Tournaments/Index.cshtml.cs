@@ -22,31 +22,21 @@ namespace LeagueStatsPage.Pages.Tournaments
             Teams = new List<Teams>();
         }
 
-        [BindProperty]
-        public int SelectedTournament { get; set; }
-
         public List<Tournament> Tournaments {get; set;}
         public List<Teams> Teams { get; set; }
 
-        public async Task OnGetAsync()
+        public async Task OnGetAsync(int? tournamentId)
         {
             Tournaments = await _context.Tournaments.ToListAsync();
-        }
 
-        public async Task<IActionResult> OnPostAsync()
-        {
-            // Repopulate the Tournaments list
-            Tournaments = await _context.Tournaments.ToListAsync();
-            // If selected team is greater than zero then get all the Teams where their Tournament ID matches the selected Tournament
-            if (SelectedTournament > 0)
+            if (tournamentId != null)
             {
                 Teams = await _context.TournamentTeams
-                    .Where(x => x.TournamentID == SelectedTournament)
+                    .Where(x => x.TournamentID == tournamentId)
                     .Include(y => y.Teams)
                     .Select(o => o.Teams)
-                    .ToListAsync();                   
+                    .ToListAsync();
             }
-            return Page();
         }
     }
 }

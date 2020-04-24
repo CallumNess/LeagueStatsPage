@@ -17,7 +17,7 @@
         <input type="submit" value="Filter" />
     </p>
 </form>
-    <table data-toggle="table" data-search="true">
+<table data-toggle="table">
     <thead>
         <tr>
             <th data-sortable="true">
@@ -35,7 +35,6 @@
             <th>
                 @Html.DisplayNameFor(model => model.PlayerDetails[0].StartDate)
             </th>
-            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -48,6 +47,7 @@
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Team.TeamName)
+                    <img src="@($"../images/TeamIcons/team{item.TeamsId}.png")" height="30" width="30" />
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Age)
@@ -58,12 +58,7 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.StartDate)
                 </td>
-                <td>
-                    <a asp-page="./Edit" asp-route-id="@item.PlayerDetailsID">Edit</a> |
-                    <a asp-page="./Details" asp-route-id="@item.PlayerDetailsID">Details</a> |
-                    <a asp-page="./Delete" asp-route-id="@item.PlayerDetailsID">Delete</a>
-                </td>
             </tr>
         }
-    </tbody>
-</table>
+        </tbody>
+    </table>

@@ -11,6 +11,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using LeagueStatsPage.Data;
+using Microsoft.Extensions.FileProviders;
+using System.IO;
 
 namespace LeagueStatsPage
 {
@@ -39,7 +41,6 @@ namespace LeagueStatsPage
             services.AddDbContext<LeagueStatsPageContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("LeagueStatsPageContext")));
         }
-
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
