@@ -17,6 +17,10 @@
     {
       "library": "twitter-bootstrap@4.4.0",
       "destination": "wwwroot/lib/twitter-bootstrap@4.4.0"
+    },
+    {
+      "library": "javascript.util@0.12.12",
+      "destination": "wwwroot/lib/javascript.util@0.12.12"
     }
 
   ]

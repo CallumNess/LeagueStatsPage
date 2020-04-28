@@ -46,8 +46,8 @@
                     <span class="flag-icon flag-icon-@item.Nationality"></span>
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Team.TeamName)
                     <img src="@($"../images/TeamIcons/team{item.TeamsId}.png")" height="30" width="30" />
+                    @Html.DisplayFor(modelItem => item.Team.TeamName)                 
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Age)
