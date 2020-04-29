@@ -20,6 +20,9 @@
 <table data-toggle="table">
     <thead>
         <tr>
+            <th data-sortable="true" data-width="80">
+                @Html.DisplayNameFor(model => model.PlayerDetails[0].Nationality)
+            </th>
             <th data-sortable="true">
                 @Html.DisplayNameFor(model => model.PlayerDetails[0].Name)
             </th>
@@ -41,13 +44,15 @@
         @foreach (var item in Model.PlayerDetails)
         {
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
+                <td class="text-center">
                     <span class="flag-icon flag-icon-@item.Nationality"></span>
                 </td>
                 <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
                     <img src="@($"../images/TeamIcons/team{item.TeamsId}.png")" height="30" width="30" />
-                    @Html.DisplayFor(modelItem => item.Team.TeamName)                 
+                    @Html.DisplayFor(modelItem => item.Team.TeamName)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Age)
@@ -60,5 +65,5 @@
                 </td>
             </tr>
         }
-        </tbody>
-    </table>
+    </tbody>
+</table>
