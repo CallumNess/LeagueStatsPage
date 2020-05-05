@@ -19,6 +19,35 @@ namespace LeagueStatsPage.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("LeagueStatsPage.Models.Fixture", b =>
+                {
+                    b.Property<int>("FixtureID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("AwayTeamID");
+
+                    b.Property<int>("AwayTeamResult");
+
+                    b.Property<DateTime>("GameDate");
+
+                    b.Property<int>("HomeTeamID");
+
+                    b.Property<int>("HomeTeamResult");
+
+                    b.Property<int>("SeasonID");
+
+                    b.HasKey("FixtureID");
+
+                    b.HasIndex("AwayTeamID");
+
+                    b.HasIndex("HomeTeamID");
+
+                    b.HasIndex("SeasonID");
+
+                    b.ToTable("Fixtures");
+                });
+
             modelBuilder.Entity("LeagueStatsPage.Models.PlayerDetails", b =>
                 {
                     b.Property<int>("PlayerDetailsID")
@@ -44,6 +73,40 @@ namespace LeagueStatsPage.Migrations
                     b.HasIndex("TeamsId");
 
                     b.ToTable("PlayerDetails");
+                });
+
+            modelBuilder.Entity("LeagueStatsPage.Models.Season", b =>
+                {
+                    b.Property<int>("SeasonID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("EndDate");
+
+                    b.Property<bool>("IsCancelled");
+
+                    b.Property<string>("SeasonTitle");
+
+                    b.Property<DateTime>("StartDate");
+
+                    b.Property<int>("TournamentID");
+
+                    b.HasKey("SeasonID");
+
+                    b.HasIndex("TournamentID");
+
+                    b.ToTable("Seasons");
+
+                    b.HasData(
+                        new { SeasonID = 1, EndDate = new DateTime(2020, 4, 19, 0, 0, 0, 0, DateTimeKind.Unspecified), IsCancelled = false, SeasonTitle = "Spring Split", StartDate = new DateTime(2020, 1, 24, 0, 0, 0, 0, DateTimeKind.Unspecified), TournamentID = 1 },
+                        new { SeasonID = 2, EndDate = new DateTime(2020, 9, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), IsCancelled = false, SeasonTitle = "Summer Split", StartDate = new DateTime(2020, 6, 12, 0, 0, 0, 0, DateTimeKind.Unspecified), TournamentID = 1 },
+                        new { SeasonID = 3, EndDate = new DateTime(2020, 4, 19, 0, 0, 0, 0, DateTimeKind.Unspecified), IsCancelled = false, SeasonTitle = "Spring Split", StartDate = new DateTime(2020, 1, 25, 0, 0, 0, 0, DateTimeKind.Unspecified), TournamentID = 2 },
+                        new { SeasonID = 4, EndDate = new DateTime(2020, 8, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), IsCancelled = false, SeasonTitle = "Summer Split", StartDate = new DateTime(2020, 6, 13, 0, 0, 0, 0, DateTimeKind.Unspecified), TournamentID = 2 },
+                        new { SeasonID = 5, EndDate = new DateTime(2020, 4, 25, 0, 0, 0, 0, DateTimeKind.Unspecified), IsCancelled = false, SeasonTitle = "Spring Split", StartDate = new DateTime(2020, 2, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), TournamentID = 3 },
+                        new { SeasonID = 6, EndDate = new DateTime(2020, 9, 13, 0, 0, 0, 0, DateTimeKind.Unspecified), IsCancelled = false, SeasonTitle = "Summer Split", StartDate = new DateTime(2020, 6, 17, 0, 0, 0, 0, DateTimeKind.Unspecified), TournamentID = 3 },
+                        new { SeasonID = 7, EndDate = new DateTime(2020, 5, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), IsCancelled = false, SeasonTitle = "Spring Split", StartDate = new DateTime(2020, 1, 13, 0, 0, 0, 0, DateTimeKind.Unspecified), TournamentID = 6 },
+                        new { SeasonID = 8, EndDate = new DateTime(2020, 9, 13, 0, 0, 0, 0, DateTimeKind.Unspecified), IsCancelled = false, SeasonTitle = "Summer Split", StartDate = new DateTime(2020, 6, 14, 0, 0, 0, 0, DateTimeKind.Unspecified), TournamentID = 6 }
+                    );
                 });
 
             modelBuilder.Entity("LeagueStatsPage.Models.Teams", b =>
@@ -144,11 +207,37 @@ namespace LeagueStatsPage.Migrations
                     b.ToTable("TournamentTeams");
                 });
 
+            modelBuilder.Entity("LeagueStatsPage.Models.Fixture", b =>
+                {
+                    b.HasOne("LeagueStatsPage.Models.Teams", "AwayTeam")
+                        .WithMany()
+                        .HasForeignKey("AwayTeamID")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("LeagueStatsPage.Models.Teams", "HomeTeam")
+                        .WithMany()
+                        .HasForeignKey("HomeTeamID")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("LeagueStatsPage.Models.Season", "Season")
+                        .WithMany("Fixtures")
+                        .HasForeignKey("SeasonID")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
             modelBuilder.Entity("LeagueStatsPage.Models.PlayerDetails", b =>
                 {
                     b.HasOne("LeagueStatsPage.Models.Teams", "Team")
                         .WithMany()
                         .HasForeignKey("TeamsId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("LeagueStatsPage.Models.Season", b =>
+                {
+                    b.HasOne("LeagueStatsPage.Models.Tournament", "Tournament")
+                        .WithMany()
+                        .HasForeignKey("TournamentID")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 

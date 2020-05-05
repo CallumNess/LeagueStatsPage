@@ -13,6 +13,12 @@
     <Compile Remove="Migrations\20200403153735_InitialCreate.Designer.cs" />
     <Compile Remove="Migrations\20200403154019_InitialCreate.cs" />
     <Compile Remove="Migrations\20200403154019_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20200501142717_SeasonAdded.cs" />
+    <Compile Remove="Migrations\20200501142717_SeasonAdded.Designer.cs" />
+    <Compile Remove="Migrations\20200501163048_SeasonsAdded.cs" />
+    <Compile Remove="Migrations\20200501163048_SeasonsAdded.Designer.cs" />
+    <Compile Remove="Migrations\20200504230913_SeasonData.cs" />
+    <Compile Remove="Migrations\20200504230913_SeasonData.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

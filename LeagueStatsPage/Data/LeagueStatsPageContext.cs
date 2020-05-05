@@ -16,6 +16,8 @@ namespace LeagueStatsPage.Data
         public DbSet<Teams> Teams { get; set; }
         public DbSet<Tournament> Tournaments { get; set; }
         public DbSet<TournamentTeam> TournamentTeams { get; set; }
+        public DbSet<Season> Seasons { get; set; }
+        public DbSet<Fixture> Fixtures {get; set;}
 
         public LeagueStatsPageContext()
         {
@@ -83,6 +85,72 @@ namespace LeagueStatsPage.Data
                 new Tournament { TournamentID = 6, TournamentName = "LPL"},
                 new Tournament { TournamentID = 4, TournamentName = "MSI"},
                 new Tournament { TournamentID = 3, TournamentName = "Worlds"}
+                );
+            modelbuilder.Entity<Season>().HasData(
+                new Season
+                {
+                    SeasonID = 1,
+                    SeasonTitle = "Spring Split",
+                    StartDate = new DateTime(2020, 01, 24),
+                    EndDate = new DateTime(2020, 04, 19),
+                    TournamentID = 1
+                },
+                new Season
+                {
+                    SeasonID = 2,
+                    SeasonTitle = "Summer Split",
+                    StartDate = new DateTime(2020,06,12),
+                    EndDate = new DateTime(2020,09,05),
+                    TournamentID = 1,
+                },
+                new Season
+                {
+                    SeasonID = 3,
+                    SeasonTitle = "Spring Split",
+                    StartDate = new DateTime(2020,01,25),
+                    EndDate = new DateTime(2020,04,19),
+                    TournamentID = 2,
+                },
+                new Season
+                {
+                    SeasonID = 4,
+                    SeasonTitle = "Summer Split",
+                    StartDate = new DateTime(2020,06,13),
+                    EndDate = new DateTime(2020,08,10),
+                    TournamentID = 2,
+                },
+                new Season
+                {
+                    SeasonID = 5,
+                    SeasonTitle = "Spring Split",
+                    StartDate = new DateTime(2020,02,05),
+                    EndDate = new DateTime(2020,04,25),
+                    TournamentID = 3,
+                },
+                new Season
+                {
+                    SeasonID = 6,
+                    SeasonTitle = "Summer Split",
+                    StartDate = new DateTime(2020, 06, 17),
+                    EndDate = new DateTime(2020, 09, 13),
+                    TournamentID = 3,
+                },
+                new Season
+                {
+                    SeasonID = 7,
+                    SeasonTitle = "Spring Split",
+                    StartDate = new DateTime(2020, 01, 13),
+                    EndDate = new DateTime(2020, 05, 02),
+                    TournamentID = 6,
+                },
+                new Season
+                {
+                    SeasonID = 8,
+                    SeasonTitle = "Summer Split",
+                    StartDate = new DateTime(2020, 06, 14),
+                    EndDate = new DateTime(2020, 09, 13),
+                    TournamentID = 6,
+                }
                 );
             modelbuilder.Entity<TournamentTeam>().HasKey(tt => new { tt.TournamentID, tt.TeamsID });
         }

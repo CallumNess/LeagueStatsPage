@@ -763,7 +763,25 @@ namespace LeagueStatsPage.Models
                 {
                     TournamentID = 6,
                     TeamsID = 47
-                });
+                });  
+
+            if (context.Fixtures.Any())
+            {
+                var fixtures = context.Fixtures;
+                context.RemoveRange(fixtures);
+                context.SaveChanges();
+            }
+            context.Fixtures.AddRange(
+            new Fixture
+            {
+                GameDate = new DateTime(2020, 01, 24),
+                HomeTeamID = 1,
+                AwayTeamID = 5,
+                HomeTeamResult = 1,
+                AwayTeamResult = 0,
+                SeasonID = 1
+            }
+            );
             context.SaveChanges();
         }
     }

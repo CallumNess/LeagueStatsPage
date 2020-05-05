@@ -4,7 +4,9 @@ body {
     padding-top: 0px;
     padding-bottom: 20px;
     font-family: 'Roboto', sans-serif;
-    font-size:15px;
+    font-size: 15px;
+    background: url(https://nexus.leagueoflegends.com/wp-content/uploads/2019/10/Banner_Preseason-1_dwfwpnp0byzkpe2hk65v.jpg);
+    background-size: 100%;
 }
 
 /* Wrapping element */
